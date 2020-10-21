@@ -34,9 +34,14 @@
       background: linear-gradient(to bottom, #99089e 5%, #85048a 100%);
       box-shadow: inset 0px 10px 14px -7px #64046d;
       color: #e2e2e2;
-    }
-    & ::placeholder {
-      color: #e2e2e2;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #e2e2e2;
+      }
     }
   }
   .values-text {
@@ -57,14 +62,12 @@
     text-shadow: 0px 1px 0px #5b326b;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
-
+    &:focus {
+      outline: none;
+    }
     &:hover {
       background: linear-gradient(to bottom, #8b3d9b 5%, #8b4f97 100%);
       background-color: #408c99;
-    }
-    &:active {
-      position: relative;
-      top: 1px;
     }
   }
 }
